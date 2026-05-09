@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>Seaspeed Marine Management LLC</title>
+    <link rel="icon" type="image" href="https://media.licdn.com/dms/image/v2/C4D0BAQFnE4Mw5U0q1A/company-logo_200_200/company-logo_200_200/0/1632123439910/seaspeed_marine_management_llc_logo?e=2147483647&v=beta&t=XG7FpYDycnu_VIfT329Sbw-BujxnDf_pazNr5Q7XqZQ">
+    <link rel="stylesheet" href="General.css">
+    <script src="imagecarousel.js" defer></script>
+</head>
+<body>
+<div style="min-width: 960px; margin: 0 auto;">
+    <nav class="containerNAV">
+        <div class="Logo"><img src="https://framerusercontent.com/images/X4AB9DvONFc0GBzrHKY1QtGC7Qg.png?scale-down-to=512" alt="SMM Logo" width="185px"></div>
+        <div class="Nav">
+            <a href="HomeMainPage.html"><h4>Home</h4></a>
+            <a href="About.html"><h4>About</h4></a>
+            <div class="dropdown">
+                <button class="dropbtn"><h2>Services</h2></button>
+                <div class="dropdown-content">
+                    <a href="Services.html"><p class="textdropdown"><strong>General Services</strong></p></a>
+                    <a href="Bulk.html"><p class="textdropdown"><strong>Bulk</strong></p></a>
+                    <a href="Tanker.html"><p class="textdropdown"><strong>Tanker</strong></p></a>
+                    <a href="SP.html"><p class="textdropdown"><strong>Sale & Purchase</strong></p></a>
+                    <a href="Offshore.html"><p class="textdropdown"><strong>Offshore</strong></p></a>
+                </div>
+            </div>
+            <a href="Contact.html"><h4>Contact</h4></a>
+        </div>
+        <button class="ContactButton" onclick="window.location.href='Contact.html'"><h2>Contact Us</h2><img src="https://marketplace.canva.com/HwJxw/MAFYBRHwJxw/1/tl/canva-phone-icon-illustration-MAFYBRHwJxw.png" class="ContactImg" alt="Phone Symbol"></button>
+    </nav>
+    <main>
+       <div class="Headbar Contact" id="rise">
+            <div class="ContactBar">
+                <div class="test"><h1 id="ContactH1">Want to get in touch? Contact us!</h1></div>
+            </div>
+        </div>
+        <div class="Office" id="rise">
+            <div class="officeflex">
+                <div class="office-container fade-carousel">
+                    <div class="carousel-inner">
+                        <img src="https://d3ob0s3rxbjyep.cloudfront.net/content/Mohammed_Al_Mulla_Tower_Cover_22122021_4087f986d2_be4e847b14.jpg" class="active">
+                        <img src="https://d3ob0s3rxbjyep.cloudfront.net/content/small_The_First_Tower_Al_Majaz_Cover_09_08_eabff81c2e_2c7ddc82dc.jpg">
+                        <img src="https://dbz-images.dubizzle.com/images/2026/04/16/4e1c7540-fb3d-47a7-8b5c-8a7b665ffc91/fc62db9b610c46e88e05bf541e907a25-.jpg?impolicy=dpv">
+                    </div>
+                </div>
+            </div>
+            <div class="Extra">
+                <div class="Details">
+                    <div id="direct">
+                        <h2>
+                        Seaspeed Marine Management LLC<br>
+                        </h2>
+                        <h3>
+                        📍 1104, Mohammed Al Mulla Tower, Al Ittihad Road, Al Nahda Sharjah, United Arab Emirates
+                        </h3>
+                        <button onclick="window.open('https://maps.app.goo.gl/uxHenZMxefsFRtkCA', '_blank');" class="ContactButton"><h2>Directions</h2></button>
+                    </div>
+                    <div>
+                        <h3>
+                        For further inquiries, please email:
+                        </h3>
+                        <p>
+                        <strong>Tanker</strong>: chartering@seaspeedmarine.com<br>
+                        <strong>Dry Bulk:</strong> dry@seaspeedmarine.com<br>
+                        <strong>Offshore and S+P:</strong> offshore.auh@seaspeedmarine.com<br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p>or...</p>
+                        <h2>
+                            Call us at: +971 656 38938<br>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formbar" id="rise">
+            <div><h1 id="AboutH1">You can also send an inquiry through this form!</h1></div>
+            <div class="form-container">
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="name"><p>Name</p></label>
+                        <input type="text" id="name" placeholder="Jane Smith" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile"><p>Mobile</p></label>
+                        <input type="tel" id="mobile" placeholder="(Country Code) - Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><p>Email</p></label>
+                        <input type="email" id="email" placeholder="james@seaspeedmarine.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company"><p>Company Name</p></label>
+                        <textarea id="company" placeholder="OceanVessel Marine" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="vesselType"><p>Vessel Type</p></label>
+                        <select id="vesselType">
+                            <option value="" disabled selected>Select...</option>
+                            <option value="cargo">Cargo</option>
+                            <option value="tanker">Tanker</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry"><p>Enquiry</p></label>
+                        <textarea id="enquiry" placeholder="I am looking to charter an xxxx vessel" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn"><h2>Submit</h2></button>
+                </form>
+            </div>
+        </div>
+        <div class="subscribe-bar" id="rise">
+            <div class="subscribe-container">
+                <h1>Navigate the future with Seaspeed.</h1>
+                <p class="subscribe-text">Get notified about Seaspeed's available vessels for charter:</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="name@email.com" required>
+                    <button type="submit"><h2>Subscribe</h2></button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="containerFOOT">
+        <div class="Logo2"><img src="https://media.licdn.com/dms/image/v2/C4D0BAQFnE4Mw5U0q1A/company-logo_200_200/company-logo_200_200/0/1632123439910/seaspeed_marine_management_llc_logo?e=2147483647&v=beta&t=XG7FpYDycnu_VIfT329Sbw-BujxnDf_pazNr5Q7XqZQ" alt="SMM Logo" width="50px"></div>
+        <div class="Foot">
+            <a href="https://www.facebook.com/seaspeedmm" target="_blank"><h6>Facebook</h6></a>
+            <a href="https://www.linkedin.com/company/seaspeed-marine-management-llc/?originalSubdomain=ae" target="_blank"><h6>LinkedIn</h6></a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

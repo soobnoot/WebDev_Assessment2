@@ -1,0 +1,1410 @@
+/* This is for the fonts */
+@font-face {
+    font-family: myFontBody; 
+    src: url(SourceSansPro-Regular.woff);
+}
+
+@font-face {
+    font-family: myFontH2; 
+    src: url(cooper-hewitt.medium.woff);
+}
+
+@font-face {
+    font-family: myFontH1; 
+    src: url(cooper-hewitt.bold.woff);
+}
+
+/* General customization for the page */
+html {
+    background: #DEE7E7 linear-gradient(to top, #4249ccc0, #dee7e700) no-repeat left bottom / 100% 30% fixed;
+}
+
+body {
+    margin: 0;
+    font-family: myFontBody;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: myFontH1;
+    font-size: 85px;
+    margin: 5px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: myFontH2;
+    margin: 5px;
+}
+
+p {
+    font-family: myFontBody;
+    font-size: 23.5px;
+    margin: 5px;
+}
+
+main {
+    padding-top: 100px;
+    background: #DEE7E7 linear-gradient(to top, #4249ccc0, #dee7e700) no-repeat left bottom / 100% 30% fixed;
+    display: grid;
+    place-items: center;
+}
+
+/* This is for the rising effect */
+@keyframes fade-rise {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#rise {
+    animation: fade-rise linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+/* This is for the navigation bar */
+nav {
+    background-color: #424ACC;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    top:0;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 15px #000000e1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 210px;
+    height: 60px;
+    border: 2px white;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+.Nav {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* For all the hyperlinks that'll be used */
+a:link {
+  color: #0c1058;
+  transition: 0.15s;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  transition: 0.15s;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c1058;
+  transition: 0.15s;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #0c1058;
+  transition: 0.15s;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* For the dropdown tab when hovering over "Services" */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #424ACC;
+  margin: 27px 0px;
+  font-size: 17px;
+  color: white;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #0c1058;
+    transition: 0.15s;
+}
+
+.textdropdown {
+    font-size: 20px;
+}
+
+/* For the contact button */
+.ContactButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vw;
+    padding: 0;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 210px;
+    height: 60px;
+    border: 2px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ContactButton:hover {
+    background-color: black;
+}
+
+.ContactImg {
+    width: 20%;
+    height: 70%;
+    float: right;
+}
+
+/* For the footer of the page */
+footer {
+    background-color: #424ACC;
+    box-shadow: 0 0 15px #000000e1;
+    background: linear-gradient(to bottom, #424ACC, #23288f) no-repeat left bottom / 100%;
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 100%;
+    height: 200px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFOOT {
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Foot {
+    width: 200px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+    border: 2px white;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+/* FOR HOMEPAGE*/
+.LeadQuote {
+    display: flex;
+    background-color: #424ACC;
+    color: white;
+    margin: 50px 0px;
+}
+
+.LeadText {
+    display: grid;
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.TheVision {
+    display: flex;
+    background-color: #424ACC;
+    color: white;
+    margin: 100px 0px;
+    object-fit: cover;
+}
+
+.VisionText {
+    display: grid;
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.FunFlare {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color: red;
+    color: white;
+    width: 40%;
+    height: 60px;
+    border: 20px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+.Why {
+    display: grid;
+    place-items: center;
+    margin: 100px 0px;
+}
+
+.backgroundimage {
+    background-image: url(https://framerusercontent.com/images/drppREyE6sA4sYzZ8nVR4UzLn9w.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 50px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GeneralReasons {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px;
+    height: 500px;
+    width: 650px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centertext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+div.ul {
+    text-align: center;
+}
+
+ul.htul {
+    display: inline-block;
+    text-align: left;
+}
+
+li::marker {
+  content: "✓ ";
+  font-size: 1.5em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.Reasons {
+    background-color: #424ACC;
+    border: 20px #424ACC;
+    border-radius: 50px;
+    color: white;
+    padding: 0px 20px;
+    margin: 20px 50px;
+    height: 450px;
+    width: 400px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.FunFlare2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    height: 60px;
+    border: 20px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+#specific {
+    box-shadow: 0 0 15px #7e7e7e;
+}
+
+.ReasonsP {
+    margin: 0px 20px;
+    font-size: 22px;
+}
+
+.graybar {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 50px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.red {
+    color: red;
+}
+
+#Adv {
+    padding: 30px;
+    width: 700px;
+    height: 100%;
+    font-size: 30px;
+}
+
+#Trust {
+    font-size: 45px;
+}
+
+.trusted {
+    margin: 20px;
+}
+
+.imageflex {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    padding: 20px 50px;
+}
+
+.carousel-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-inner img.active {
+    opacity: 1;
+}
+
+#image {
+    object-fit: cover;
+}
+
+.subscribe-bar {
+    background-color: #ff0000;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-container {
+    max-width: 1000px;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.subscribe-text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 20px #ffffff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    gap: 40px;
+}
+
+.subscribe-form input {
+    border: 20px #ffffff;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    flex-grow: 1;
+}
+
+.subscribe-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 40px;
+    background-color: red;
+    color: white;
+    height: 60px;
+    border: 20px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #580c0c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: black;
+}
+
+/* FOR ABOUT PAGE */
+.Headbar {
+    margin: 50px;
+    height: 700px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.About {
+    background-image: url(https://framerusercontent.com/images/drppREyE6sA4sYzZ8nVR4UzLn9w.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 92.5%;
+}
+
+.AboutBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#AboutH1 {
+    font-size: 60px;
+}
+
+#AboutP {
+    font-size: 20px;
+}
+
+.test  {
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.Team {
+    background-image: url(https://framerusercontent.com/images/uYg0Gngqehhcu9OjdQnA0hTTk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 92.5%;
+}
+
+.TeamBar {
+    margin: 100px;
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TeamBar2 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    height: 100%;
+    width: 50%;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#lineheight {
+    line-height: 1.5;
+}
+
+.officebox {
+    margin: 10px 0px 50px 0px;
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url(https://live.staticflickr.com/65535/40827875013_cf1b0b6cbb_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+}
+
+.office {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    height: 100%;
+    width: 500px;
+    
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.office :is(p, h2) {
+    color: black;
+    margin: 20px 50px;
+}
+
+.office h3 {
+    font-size: 25px;
+    color: white;
+}
+
+.Policy {
+    margin: 30px;
+    width: 60%;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.Policy p {
+    font-size: 22px;
+}
+
+.shadow {
+    border: 2px white;
+    box-shadow: 0 0 15px #000000a6;
+}
+
+.redbg {
+    background-color: red;
+    color: white;
+}
+
+.extramargin {
+    margin: 0px 0px 50px 0px;
+}
+
+.topnbottommargin {
+    margin: 50px 0px;
+}
+
+.lessmargin {
+    margin: 0px 0px 50px 0px;
+}
+
+/* FOR CONTACT PAGE */
+
+.Contact {
+    background-image: url(https://framerusercontent.com/images/BNPFQYRBtN0hrU7sL1BvpI84aXw.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 77%;
+}
+
+.ContactBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 25%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#ContactP {
+    font-size: 20px;
+}
+
+.test  {
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.Office {
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-weight: normal;
+}
+
+.Details {
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.officeflex {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.office-container {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+
+.Extra {
+    width: 60%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#direct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbar {
+    background-color: rgb(211, 211, 211);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/195/226/large_2x/abstract-elegant-white-and-gray-background-abstract-white-pattern-squares-texture-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 0 15px #000000e1;
+    width: 100%;
+    margin: 100px 0px;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.form-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+    width: 800px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #000000e1;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px 0px 20px 0px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 700px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #000000;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000;
+    box-shadow: 0 0 15px #000000e1; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+}
+
+/* FOR GENERAL SERVICES */
+.Service {
+    background-image: url(https://freightwaves.b-cdn.net/wp-content/uploads/2018/09/vlcc-2-1.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    height: 600px;
+}
+
+.ServiceBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#ServiceH1 {
+    font-size: 85px;
+}
+
+#ServiceP {
+    font-size: 25px;
+}
+
+.Services {
+    width: 100%;
+    height: 1200px;
+    margin: 100px 0px 0px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.ListedServices {
+    background-color: #424ACC;
+    border: 20px #424ACC;
+    border-radius: 50px;
+    color: white;
+    padding: 20px 20px;
+    margin: 20px 50px;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.FunFlare3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 0px 10px;
+    height: 60px;
+    border: 20px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+.ServicesP {
+    margin: 0px 20px;
+    font-size: 18.5px;
+}
+
+.HeadR {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    text-align: center;
+
+    margin: 20px;
+}
+
+#centereddiv {
+    height: 70%;
+    margin-top: 20px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServicesPLUS {
+    background-color: red;
+    color: white;
+
+    width: 100%;
+    height: 600px;
+    margin: 100px 0px 0px 0px;
+    padding: 20px 0px 50px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ListedServicesPLUS {
+    background-color: #ffffff;
+    border: 20px #424ACC;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 20px 20px;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FunFlare4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 60px;
+    border: 20px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+.HeadRPLUS {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    text-align: center;
+}
+
+.ContactButtonPLUS {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vw;
+    padding: 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px rgb(255, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ContactButtonPLUS:hover {
+    background-color: black;
+}
+
+/* FOR BULK SERVICE PAGE */
+.Bulk {
+    background-image: url(https://framerusercontent.com/images/ve1cYW7AjRD8gFLeaOde93qZQ.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 90%;
+    height: 500px;
+}
+
+.BulkBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#BulkH1 {
+    font-size: 100px;
+}
+
+#BulkP {
+    font-size: 25px;
+}
+
+.TeamBar3 {
+    margin: 100px;
+    height: 600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TeamBar4 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.faq {
+    width: 100%;
+    padding: 20p 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px #000000e1;
+}
+
+.FAQans {
+    background-color: #ffffff;
+    border: 2px #7e7e7e;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #000000e1;
+    width: 50%;
+
+    padding: 20px;
+    margin: 20px;
+
+    text-align: left;
+}
+
+summary {
+    position: relative;
+    anchor-name: --summary;
+    font-weight: bold;
+    font-size: 30px;
+}
+  
+summary::marker {
+    content: "";
+}
+  
+summary::before, summary::after {
+    content: "";
+    border-block-start: 3px solid rgb(255, 0, 0);
+    height: 0;
+    width: 20px;
+
+    inset-block-start: 50%;
+    right: 0;
+
+    position: absolute;
+    position-anchor: --summary;
+    position-area: top end;
+}
+
+summary::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+}
+
+details p {
+    padding-top: 15px;
+}
+
+/* Rotate the line when open */
+details[open] summary::after {
+    border-block-start: 3px solid rgb(0, 0, 0);
+    transform: rotate(0deg);
+}
+
+details[open] p{
+    animation: up 0.1s linear forwards;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translatey(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+/* FOR TANKER PAGE */
+.Tanker {
+    background-image: url(https://framerusercontent.com/images/XnkBQueEPDKegKc3k2vjrnkbtag.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    height: 500px;
+}
+
+.TankerBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#TankH1 {
+    font-size: 100px;
+}
+
+#TankP {
+    font-size: 25px;
+}
+
+.BrokeNCharter {
+    display: flex;
+    flex-direction: column;
+    background-color: #424ACC;
+    color: white;
+
+    margin: 50px 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/* FOR OFFSHORE PAGE */
+.Offshore {
+    background-image: url(https://curtinmaritime.com/wp-content/uploads/Curtin-Maritime-Gretchen-C-Tugboat-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    height: 500px;
+}
+
+.OffshoreBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#OffH1 {
+    font-size: 100px;
+}
+
+#OffP {
+    font-size: 25px;
+}
+
+.crop {
+    box-shadow: 0 0 15px #000000e1;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#aht {
+    object-position: 80% center;
+}
+
+#crew {
+    object-position: 20% center;
+}
+
+.listcontainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.gr {
+    width: 100%;
+    padding: 20p 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px #000000e1;
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerOFF {
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+
+    padding: 20px;
+    margin: 25px;
+
+    width: 500px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FOR SALE AND PURCHASE */
+.SP {
+    background-image: url(https://framerusercontent.com/images/fH0ChAJdS04aBa5yVS3t6ofM.jpg?width=1000&height=638);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    height: 500px;
+}
+
+.SPBar {
+    background-color: #424ACC;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 20px #424ACC;
+    box-shadow: 0 0 15px #ffffff79;
+    color: white;
+
+    padding: 20px 0px;
+    height: 42.5%;
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+}
+
+#SPH1 {
+    font-size: 100px;
+}
+
+#SPP {
+    font-size: 25px;
+}
+
+.shipcontainer {
+    width: 100%;
+    margin: 50px 0px;
+    padding: 0;
+    grid-gap: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.shipcontainer2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerSP {
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000000e1;
+
+    padding: 20px;
+    margin: 25px;
+
+    width: 500px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.SPcrop {
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#shipP {
+    text-align: left;
+    min-width: 400px;
+    margin: 10px;
+}
